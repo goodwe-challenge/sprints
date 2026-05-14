@@ -1,0 +1,29 @@
+:root {
+  --bg: #eeeaf6;
+  --surface: #ffffff;
+  --surface-2: #f5f3fc;
+  --border: rgba(160, 140, 210, 0.18);
+  --border-strong: rgba(140, 110, 200, 0.28);
+
+  --violet: #7c5cbf;
+  --violet-light: #a07de0;
+  --violet-dim: rgba(124, 92, 191, 0.12);
+  --pink: #e0a0c8;
+  --peach: #f5c4a0;
+  --sky: #a8c8f0;
+  --green: #5ab896;
+
+  --text: #1a1428;
+  --text-2: #6b5f84;
+  --text-3: #a098b8;
+
+  --radius: 18px;
+  --radius-sm: 10px;
+  --shadow: 0 4px 24px rgba(100, 70, 180, 0.08);
+  --shadow-lg: 0 12px 48px rgba(100, 70, 180, 0.13);
+
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+
+  --sidebar-w: 256px;
+}

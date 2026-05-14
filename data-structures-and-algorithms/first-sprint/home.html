@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thunderbolt — Dashboard</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+        />
+    </head>
+
+    <body class="home-body">
+        <div class="bg-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+
+        <div class="layout">
+            <aside class="sidebar">
+                <div class="brand">
+                    <div class="brand-icon"><i class="fi fi-rr-bolt"></i></div>
+                    <span class="brand-name">Thunderbolt</span>
+                </div>
+                <nav class="nav">
+                    <span class="nav-section-label">Principal</span>
+                    <a href="#" class="nav-item active" data-section="dashboard">
+                        <span class="nav-icon"><i class="fi fi-rr-apps"></i></span> Dashboard
+                    </a>
+                    <a href="#" class="nav-item" data-section="session">
+                        <span class="nav-icon"><i class="fi fi-rr-charging-station"></i></span> Nova Sessão
+                    </a>
+                    <span class="nav-section-label">Dados</span>
+                    <a href="#" class="nav-item" data-section="wallet">
+                        <span class="nav-icon"><i class="fi fi-rr-wallet"></i></span> Carteira
+                    </a>
+                </nav>
+                <div class="sidebar-footer">
+                    <div class="user-pill" id="sidebar-user">
+                        <div class="user-avatar" id="sidebar-avatar">?</div>
+                        <div class="user-info">
+                            <div class="user-name" id="sidebar-name">Usuário</div>
+                            <div class="user-plan" id="sidebar-plan">Plano —</div>
+                        </div>
+                    </div>
+                    <a href="index.html" class="logout-btn" id="btn-logout">
+                        <i class="fi fi-rr-sign-out-alt"></i> Sair da conta
+                    </a>
+                </div>
+            </aside>
+            <main class="main">
+                <section class="section active" id="section-dashboard">
+                    <div class="page-header">
+                        <div>
+                            <p class="page-label">Visão geral</p>
+                            <h2 class="page-title" id="dash-greeting">Olá!</h2>
+                        </div>
+                        <div class="header-badge" id="dash-plan-badge">— kW</div>
+                    </div>
+                    <div class="cards-row">
+                        <div class="stat-card accent">
+                            <div class="stat-icon"><i class="fi fi-rr-charging-station"></i></div>
+                            <div class="stat-label">Sessões realizadas</div>
+                            <div class="stat-value" id="stat-sessions">0</div>
+                            <div class="stat-sub">total histórico</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fi fi-rr-bolt"></i></div>
+                            <div class="stat-label">Energia total</div>
+                            <div class="stat-value" id="stat-energy">0 <span>kWh</span></div>
+                            <div class="stat-sub">carregada</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fi fi-rr-money-bill-wave"></i></div>
+                            <div class="stat-label">Gasto total</div>
+                            <div class="stat-value">R$ <span id="stat-cost-val">0,00</span></div>
+                            <div class="stat-sub">acumulado</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fi fi-rr-tags"></i></div>
+                            <div class="stat-label">Tarifa do plano</div>
+                            <div class="stat-value">R$ <span id="stat-rate-val">—</span></div>
+                            <div class="stat-sub">por kWh</div>
+                        </div>
+                    </div>
+
+                    <div class="carbon-card card">
+                        <div class="carbon-header">
+                            <div class="carbon-header-icon">
+                                <i class="fi fi-rr-leaf"></i>
+                            </div>
+                            <div class="carbon-header-text">
+                                <div class="carbon-title">Impacto Ambiental</div>
+                                <div class="carbon-sub">Cada recarga GoodWe é um passo para um mundo mais limpo</div>
+                            </div>
+                        </div>
+
+                        <div class="carbon-body">
+
+                            <div class="carbon-compare">
+                                <div class="carbon-compare-label">Emissões por km rodado</div>
+                                <div class="emission-item">
+                                    <span class="emission-name">Gasolina</span>
+                                    <div class="emission-track">
+                                        <div class="emission-fill gasoline-fill">
+                                            <span>210 gCO₂</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="emission-item">
+                                    <span class="emission-name">Híbrido</span>
+                                    <div class="emission-track">
+                                        <div class="emission-fill hybrid-fill">
+                                            <span>80 gCO₂</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="emission-item">
+                                    <span class="emission-name">GoodWe EV</span>
+                                    <div class="emission-track">
+                                        <div class="emission-fill ev-fill">
+                                            <span>12 gCO₂</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="emission-saving">
+                                    <i class="fi fi-rr-arrow-trend-down"></i>
+                                    <strong>94% menos emissões</strong> que um carro a gasolina
+                                </div>
+                            </div>
+
+                            <div class="carbon-right">
+                                <div class="carbon-ring-wrap">
+                                    <svg class="carbon-ring-svg" viewBox="0 0 100 100">
+                                        <circle class="carbon-ring-track"    cx="50" cy="50" r="40" />
+                                        <circle class="carbon-ring-progress" cx="50" cy="50" r="40" id="carbon-ring-progress" />
+                                    </svg>
+                                    <div class="carbon-ring-center">
+                                        <div class="carbon-ring-pct" id="carbon-ring-pct">0%</div>
+                                        <div class="carbon-ring-label">meta árvore</div>
+                                    </div>
+                                </div>
+                                <div class="carbon-ring-goal">Meta: 21 kg = 1 árvore/ano</div>
+
+                                <div class="carbon-stats">
+                                    <div class="cs-item">
+                                        <div class="cs-value" id="cs-co2">0,00 kg</div>
+                                        <div class="cs-label">CO₂ economizado</div>
+                                    </div>
+                                    <div class="cs-item">
+                                        <div class="cs-value" id="cs-km">0 km</div>
+                                        <div class="cs-label">km limpos</div>
+                                    </div>
+                                    <div class="cs-item">
+                                        <div class="cs-value" id="cs-tree-days">0 dias</div>
+                                        <div class="cs-label">dias de absorção</div>
+                                    </div>
+                                </div>
+
+                                <div class="carbon-milestone hidden" id="carbon-milestone"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="history-preview">
+                        <div class="section-bar">
+                            <h3 class="section-title">Últimas sessões</h3>
+                            <a href="#" class="see-all" data-goto="history">Ver tudo →</a>
+                        </div>
+                        <div class="history-list" id="dash-history-list">
+                            <div class="empty-state">Nenhuma sessão registrada ainda.</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="section-session">
+                    <div class="page-header">
+                        <div>
+                            <p class="page-label">GoodWe Charge · Simulação</p>
+                            <h2 class="page-title">Simular Recarga</h2>
+                        </div>
+                    </div>
+
+                    <div id="session-setup">
+                        <div class="sim-setup-grid">
+
+                            <div class="card sim-config">
+                                <div class="sim-section-header">
+                                    <div class="sim-section-icon"><i class="fi fi-rr-settings"></i></div>
+                                    <h3>Configurar simulação</h3>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Capacidade da bateria</label>
+                                        <select id="s-capacity">
+                                            <option value="24">24 kWh — Compacto</option>
+                                            <option value="40">40 kWh — Urbano</option>
+                                            <option value="52">52 kWh — Intermédio</option>
+                                            <option value="64">64 kWh — Padrão</option>
+                                            <option value="75" selected>75 kWh — Plus</option>
+                                            <option value="82">82 kWh — Long Range</option>
+                                            <option value="100">100 kWh — Performance</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Potência do carregador</label>
+                                        <select id="s-power">
+                                            <option value="3.7">3,7 kW — Básico</option>
+                                            <option value="7.4" selected>7,4 kW — Plus</option>
+                                            <option value="22">22 kW — Ultra</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Carga atual da bateria — <span id="s-initial-label" class="slider-val-label">20%</span></label>
+                                    <input type="range" id="s-initial-charge" min="0" max="95" value="20" step="5" class="charge-slider" />
+                                    <div class="slider-ticks">
+                                        <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>95%</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Tipo de usuário</label>
+                                        <select id="s-user-type">
+                                            <option value="comum">Padrão</option>
+                                            <option value="premium">Premium (–15%)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Horário de início</label>
+                                        <input type="time" id="s-time" />
+                                    </div>
+                                </div>
+
+                                <div class="wallet-insufficient-warn hidden" id="wallet-insufficient-warn">
+                                    <i class="fi fi-rr-triangle-warning"></i>
+                                    Saldo insuficiente. Adicione créditos na Carteira para iniciar.
+                                </div>
+                                <button class="btn-primary" id="btn-start-session">
+                                    <i class="fi fi-rr-bolt"></i> Iniciar simulação
+                                </button>
+                            </div>
+
+                            <div class="card sim-estimate">
+                                <div class="sim-section-header">
+                                    <div class="sim-section-icon"><i class="fi fi-rr-calculator"></i></div>
+                                    <h3>Estimativa</h3>
+                                </div>
+
+                                <div class="est-battery-wrap">
+                                    <div class="est-battery-body">
+                                        <div class="est-battery-fill" id="est-battery-fill" style="width:20%"></div>
+                                        <span class="est-battery-pct" id="est-battery-pct">20%</span>
+                                    </div>
+                                    <div class="est-battery-cap"></div>
+                                </div>
+
+                                <div class="est-rows">
+                                    <div class="est-row">
+                                        <span class="est-label"><i class="fi fi-rr-bolt"></i> Energia necessária</span>
+                                        <span class="est-val" id="est-energy">—</span>
+                                    </div>
+                                    <div class="est-sep"></div>
+                                    <div class="est-row highlight">
+                                        <span class="est-label"><i class="fi fi-rr-time-fast"></i> Tempo até 80%</span>
+                                        <span class="est-val" id="est-time-80">—</span>
+                                    </div>
+                                    <div class="est-row">
+                                        <span class="est-label"><i class="fi fi-rr-time-check"></i> Tempo até 100%</span>
+                                        <span class="est-val" id="est-time-100">—</span>
+                                    </div>
+                                    <div class="est-sep"></div>
+                                    <div class="est-row">
+                                        <span class="est-label"><i class="fi fi-rr-coin"></i> Custo até 80%</span>
+                                        <span class="est-val" id="est-cost-80">—</span>
+                                    </div>
+                                    <div class="est-row">
+                                        <span class="est-label"><i class="fi fi-rr-sack-dollar"></i> Custo até 100%</span>
+                                        <span class="est-val" id="est-cost-100">—</span>
+                                    </div>
+                                </div>
+
+                                <div class="est-peak-warn hidden" id="est-peak-warn">
+                                    <i class="fi fi-rr-triangle-warning"></i>
+                                    Horário de pico — tarifa +30%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="session-live" class="hidden">
+                        <div class="sim-live-grid">
+
+                            <div class="sim-live-left">
+                                <div class="card sim-live-main">
+                                    <div class="live-status-bar">
+                                        <span class="status-dot"></span>
+                                        <span class="status-label">Em andamento</span>
+                                        <span class="live-power-badge" id="live-power-badge">— kW</span>
+                                    </div>
+
+                                    <div class="battery-arc-wrap">
+                                        <svg class="battery-arc-svg" viewBox="0 0 220 220">
+                                            <circle class="arc-track"    cx="110" cy="110" r="90" />
+                                            <circle class="arc-progress" cx="110" cy="110" r="90" id="arc-progress" />
+                                        </svg>
+                                        <div class="battery-arc-center">
+                                            <div class="arc-pct" id="arc-pct">0%</div>
+                                            <div class="arc-sub">carregado</div>
+                                            <div class="arc-kwh" id="arc-kwh">0,000 kWh</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="charge-progress-wrap">
+                                        <div class="charge-progress-bar" id="progress-bar"></div>
+                                    </div>
+
+                                    <div class="session-actions">
+                                        <button class="btn-speed" id="btn-speed-session">
+                                            <i class="fi fi-rr-forward"></i> Concluir já
+                                        </button>
+                                        <button class="btn-stop" id="btn-stop-session">
+                                            <i class="fi fi-rr-stop"></i> Encerrar
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card lm-card lm-accent">
+                                    <div class="lm-icon"><i class="fi fi-rr-coin"></i></div>
+                                    <div class="lm-label">Custo acumulado</div>
+                                    <div class="lm-value" id="live-cost">R$ 0,00</div>
+                                </div>
+                            </div>
+
+                            <div class="sim-live-metrics">
+
+                                <div class="card lm-card">
+                                    <div class="lm-icon"><i class="fi fi-rr-clock"></i></div>
+                                    <div class="lm-label">Tempo decorrido</div>
+                                    <div class="lm-value" id="live-elapsed">0h 00min</div>
+                                </div>
+
+                                <div class="card lm-card">
+                                    <div class="lm-icon"><i class="fi fi-rr-hourglass-end"></i></div>
+                                    <div class="lm-label">Restante → 100%</div>
+                                    <div class="lm-value" id="live-remaining">—</div>
+                                </div>
+
+                                <div class="card lm-card" id="lm-80-card">
+                                    <div class="lm-icon"><i class="fi fi-rr-time-fast"></i></div>
+                                    <div class="lm-label">Restante → 80%</div>
+                                    <div class="lm-value" id="live-time-80">—</div>
+                                </div>
+
+                                <div class="card lm-card">
+                                    <div class="lm-icon"><i class="fi fi-rr-bolt"></i></div>
+                                    <div class="lm-label">Velocidade de carga</div>
+                                    <div class="lm-value lm-value-sm" id="live-power-label">— kW</div>
+                                    <div class="power-bars" id="power-bars">
+                                        <div class="power-bar" data-level="1"></div>
+                                        <div class="power-bar" data-level="2"></div>
+                                        <div class="power-bar" data-level="3"></div>
+                                    </div>
+                                    <div class="power-speed-label" id="power-speed-label">—</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report-card card hidden" id="report-card">
+                        <div class="report-header">
+                            <div class="report-header-icon"><i class="fi fi-rr-receipt"></i></div>
+                            <h3>Relatório da Sessão</h3>
+                        </div>
+                        <div class="report-grid" id="report-grid"></div>
+                    </div>
+                </section>
+
+                <section class="section" id="section-wallet">
+                    <div class="page-header">
+                        <div>
+                            <p class="page-label">Finanças</p>
+                            <h2 class="page-title">Carteira</h2>
+                        </div>
+                    </div>
+
+                    <div class="wallet-top-row">
+                        <div class="card wallet-balance-card">
+                            <div class="wallet-balance-left">
+                                <div class="wallet-balance-icon"><i class="fi fi-rr-wallet"></i></div>
+                                <div>
+                                    <div class="wallet-balance-label">Saldo disponível</div>
+                                    <div class="wallet-balance-value" id="wallet-balance">R$ 100,00</div>
+                                </div>
+                            </div>
+                            <div class="wallet-add-wrap">
+                                <div class="wallet-add-form hidden" id="wallet-add-form">
+                                    <input type="number" id="wallet-add-amount" placeholder="0,00" min="1" step="0.01" />
+                                    <button class="btn-confirm-add" id="btn-confirm-add"><i class="fi fi-rr-check"></i> Confirmar</button>
+                                    <button class="btn-cancel-add" id="btn-cancel-add">Cancelar</button>
+                                </div>
+                                <button class="btn-add-funds" id="btn-add-funds">
+                                    <i class="fi fi-rr-plus"></i> Adicionar saldo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-bar wallet-history-bar">
+                        <h3 class="section-title">Transações</h3>
+                        <button class="btn-clear" id="btn-clear-history">
+                            <i class="fi fi-rr-trash"></i> Limpar tudo
+                        </button>
+                    </div>
+                    <div class="wallet-history-list" id="wallet-history-list">
+                        <div class="empty-state">Nenhuma transação ainda.</div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/app.js"></script>
+        <script src="js/helpers.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>

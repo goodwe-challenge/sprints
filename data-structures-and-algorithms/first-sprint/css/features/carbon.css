@@ -1,0 +1,221 @@
+.carbon-card {
+  margin-bottom: 28px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(238, 252, 246, 0.88) 100%);
+  border-color: rgba(90, 184, 150, 0.22);
+}
+
+.carbon-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(90, 184, 150, 0.12);
+}
+
+.carbon-header-icon {
+  width: 46px;
+  height: 46px;
+  background: linear-gradient(135deg, rgba(90, 184, 150, 0.18), rgba(90, 184, 150, 0.07));
+  border: 1px solid rgba(90, 184, 150, 0.28);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5ab896;
+  font-size: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(90, 184, 150, 0.18);
+}
+
+.carbon-header-text { min-width: 0; }
+
+.carbon-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.carbon-sub { font-size: 12.5px; color: var(--text-3); margin-top: 3px; }
+
+.carbon-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ── Emissions comparison bars ── */
+
+.carbon-compare-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 14px;
+}
+
+.emission-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.emission-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+  width: 56px;
+  flex-shrink: 0;
+}
+
+.emission-track {
+  flex: 1;
+  height: 28px;
+  background: var(--surface-2);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.emission-fill {
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.emission-fill span {
+  font-size: 10.5px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.2px;
+}
+
+.gasoline-fill { width: 100%; background: linear-gradient(90deg, #e05050, #d06040); }
+.hybrid-fill   { width: 38%;  background: linear-gradient(90deg, #d08020, #e0a040); }
+.ev-fill       { width: 6%;   background: linear-gradient(90deg, #5ab896, #40c8a0); min-width: 72px; }
+
+.emission-saving {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 11px 14px;
+  background: linear-gradient(135deg, rgba(90, 184, 150, 0.10), rgba(90, 184, 150, 0.05));
+  border: 1px solid rgba(90, 184, 150, 0.24);
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  color: #3da880;
+  font-weight: 500;
+}
+
+.emission-saving i      { font-size: 13px; color: #5ab896; }
+.emission-saving strong { font-weight: 800; color: #3da880; }
+
+/* ── Carbon ring ── */
+
+.carbon-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.carbon-ring-wrap { position: relative; width: 150px; height: 150px; }
+
+.carbon-ring-svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+
+.carbon-ring-track    { fill: none; stroke: var(--surface-2); stroke-width: 10; }
+
+.carbon-ring-progress {
+  fill: none;
+  stroke: var(--border-strong);
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 251.33;
+  stroke-dashoffset: 251.33;
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.22, 1, 0.36, 1), stroke 0.5s ease;
+}
+
+.carbon-ring-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carbon-ring-pct {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-3);
+  letter-spacing: -1px;
+  line-height: 1;
+  transition: color 0.5s ease;
+}
+
+.carbon-ring-label {
+  font-size: 9.5px;
+  font-weight: 600;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.carbon-ring-goal { font-size: 11px; color: var(--text-3); font-weight: 500; text-align: center; }
+
+/* ── Carbon stats mini grid ── */
+
+.carbon-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+.cs-item {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 8px;
+  text-align: center;
+}
+
+.cs-value {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+}
+
+.cs-label {
+  font-size: 9px;
+  color: var(--text-3);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-top: 3px;
+}
+
+.carbon-milestone {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(90, 184, 150, 0.14), rgba(90, 184, 150, 0.06));
+  border: 1px solid rgba(90, 184, 150, 0.28);
+  border-radius: var(--radius-sm);
+  padding: 11px 16px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #3da880;
+  text-align: center;
+  animation: fadeUp 0.4s ease;
+}
