@@ -1,0 +1,23 @@
+/* Base — tokens, reset, animations */
+@import './base/tokens.css';
+@import './base/reset.css';
+@import './base/animations.css';
+
+/* Layout — shells and background */
+@import './layout/background.css';
+@import './layout/auth-shell.css';
+@import './layout/home-shell.css';
+
+/* Components — reusable UI pieces */
+@import './components/brand.css';
+@import './components/buttons.css';
+@import './components/forms.css';
+@import './components/cards.css';
+@import './components/status.css';
+
+/* Features — domain-specific sections */
+@import './features/auth.css';
+@import './features/dashboard.css';
+@import './features/carbon.css';
+@import './features/session.css';
+@import './features/wallet.css';
