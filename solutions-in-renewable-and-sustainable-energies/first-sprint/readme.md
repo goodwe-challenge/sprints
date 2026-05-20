@@ -1,4 +1,4 @@
-# ⚡ Thunderbolt — Sistema Inteligente de Gestão de Eletropostos
+# Thunderbolt — Sistema Inteligente de Gestão de Eletropostos
 
 **EV Challenge 2026 · GoodWe × FIAP**  
 Sprint 1 — Apresentação do Projeto Sustentável
@@ -7,12 +7,14 @@ Sprint 1 — Apresentação do Projeto Sustentável
 
 ## Equipe
 
-| Nome | RM |
-|------|----|
-| [Nome do integrante 1] | RM-XXXXX |
-| [Nome do integrante 2] | RM-XXXXX |
-| [Nome do integrante 3] | RM-XXXXX |
-| [Nome do integrante 4] | RM-XXXXX |
+| Name | RM |
+|--------|---------|-----------|
+| Victor Hugo F. Freire | 571099 |
+| Gustavo Rocha Batista | 570672 |
+| Timothée Campos Ferraz | 568688 |
+| Lucas Melchior | 504027 |
+| Davi Ramos | 571744 |
+| Gabriel Cavaloti | 571643 |
 
 ---
 

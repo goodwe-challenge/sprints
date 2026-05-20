@@ -23,3 +23,15 @@ Each subject has its own folder. Inside each folder you will find one subfolder 
 subject-name/
 └── first-sprint/
 ```
+
+## Contributors
+
+| Name | Github | ID (RM) |
+|--------|---------|-----------|
+| Victor Hugo F. Freire | [https://github.com/victorfreire7](https://github.com/victorfreire7) | 571099 |
+| Gustavo Rocha Batista | [https://github.com/gustavo-rocha-batista](https://github.com/gustavo-rocha-batista) | 570672 |
+| Timothée Campos Ferraz | [https://github.com/thempos](https://github.com/thempos) | 568688 |
+| Lucas Melchior | [https://github.com/itrolucas](https://github.com/itrolucas) | 504027 |
+| Davi Ramos | [https://github.com/NyixTAA](https://github.com/NyixTAA) | 571744 |
+| Gabriel Cavaloti | [https://github.com/GabrielCavaloti](https://github.com/GabrielCavaloti) | 571643 |
+
