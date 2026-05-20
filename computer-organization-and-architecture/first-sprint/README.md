@@ -1,10 +1,10 @@
-# ⚡ EV Charge Optimizer — Eficiência Computacional em Eletropostos
+#  EV Charge Optimizer — Eficiência Computacional em Eletropostos
 
 > Sprint 1 — Arquitetura de Computadores | FIAP × GoodWe EV Challenge 2026
 
 ---
 
-## 👥 Integrantes
+##  Integrantes
 
 | Nome | RM |
 |---|---|
@@ -17,7 +17,7 @@
 
 ---
 
-## 🔍 Problema
+##  Problema
 
 Eletropostos comerciais modernos processam operações críticas — leitura de sensores, autenticação de usuários, controle de carga e monitoramento de consumo — utilizando software de alto nível sobre hardware genérico. Essa abordagem introduz camadas desnecessárias de abstração que resultam em:
 
@@ -30,7 +30,7 @@ Em um cenário onde a eficiência energética é o núcleo do produto (recarga d
 
 ---
 
-## 💡 Justificativa
+##  Justificativa
 
 A escolha do nível de abstração do software tem impacto direto no consumo energético do hardware. Um programa em C compilado com otimizações padrão pode gerar dezenas de instruções de máquina para operações que, escritas diretamente em Assembly, precisariam de apenas algumas. Cada instrução adicional representa ciclos de clock extras, o que se traduz em energia consumida.
 
@@ -38,7 +38,7 @@ No contexto de eletropostos que operam continuamente, 24 horas por dia, essa dif
 
 ---
 
-## 🛠️ Proposta de Solução
+##  Proposta de Solução
 
 Realizar uma comparação técnica e prática entre implementações equivalentes em **C** e **Assembly x86** para operações típicas de um eletroposto, medindo e comparando:
 
@@ -56,7 +56,7 @@ A hipótese central é que **Assembly x86 reduz o número de instruções execut
 
 ---
 
-## 🏗️ Arquitetura Utilizada
+##  Arquitetura Utilizada
 
 **x86 (32/64-bit)**
 
@@ -76,7 +76,7 @@ A hipótese central é que **Assembly x86 reduz o número de instruções execut
 
 ---
 
-## 💻 Trechos de Código Assembly
+##  Trechos de Código Assembly
 
 ### Comparação: validação de sensor em C vs x86 Assembly
 
@@ -136,7 +136,7 @@ authenticate:
 
 ---
 
-## 📊 Impactos Esperados
+##  Impactos Esperados
 
 | Métrica | Código C | Assembly Otimizado | Redução Estimada |
 |---|---|---|---|
@@ -149,7 +149,7 @@ authenticate:
 
 ---
 
-## 🌱 Relação com Sustentabilidade e Energias Renováveis
+##  Relação com Sustentabilidade e Energias Renováveis
 
 A proposta conecta eficiência computacional com sustentabilidade de forma direta:
 
@@ -167,6 +167,6 @@ A proposta conecta eficiência computacional com sustentabilidade de forma diret
 
 ---
 
-## 🔗 Repositório
+##  Repositório
 
 [github.com/goodwe-challenge/sprints/tree/main/computer-organization-and-architecture/first-sprint](https://github.com/goodwe-challenge/sprints/tree/main/computer-organization-and-architecture/first-sprint)

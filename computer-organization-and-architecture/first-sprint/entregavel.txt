@@ -11,4 +11,4 @@ youtube
 
 ---
 
-https://github.com/goodwe-challenge/sprints/blob/main/solutions-in-renewable-and-sustainable-energies/first-sprint/readme.md
+https://github.com/goodwe-challenge/sprints/blob/chore/deliver/computer-organization-and-architecture/first-sprint/README.md
