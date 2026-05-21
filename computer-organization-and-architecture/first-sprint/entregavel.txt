@@ -11,4 +11,4 @@ https://www.youtube.com/watch?v=1hLZhpPPMxo
 
 ---
 
-https://github.com/goodwe-challenge/sprints/blob/chore/deliver/computer-organization-and-architecture/first-sprint/README.md
+https://github.com/goodwe-challenge/sprints/blob/main/computer-organization-and-architecture/first-sprint/README.md
