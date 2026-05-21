@@ -1,0 +1,17 @@
+Disciplina: COMPUTER SCIENCE
+
+Curso: Ciências da Computação – 1º Ano
+
+Turma: 1CCPZ
+
+Entrega: Sprint 01 – Circuito Lógico com Expressão Booleana e Tabela Verdade
+
+Integrantes: 
+    Davi Ramos - RM: 571744
+    Lucas Malchior - RM: 574027
+    Gustavo Rocha - RM: 570672
+    Victor Hugo - RM: 571099
+    Timothée Campos Ferraz - RM: 568688
+    Gabriel Cavaloti - RM 571643
+
+Desafio: GoodWe

@@ -9,7 +9,7 @@
 | Nome | RM |
 |---|---|
 | Davi Ramos | 571744 |
-| Lucas Malchior | 504027 |
+| Lucas Malchior | 574027 |
 | Gustavo Rocha | 570672 |
 | Victor | 571099 |
 | Timothée Campos Ferraz | 568688 |

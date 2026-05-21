@@ -1,0 +1,18 @@
+Davi Ramos - RM: 571744
+Lucas Malchior - RM: 574027
+Gustavo Rocha - RM: 570672
+Victor Hugo - RM: 571099
+Timothée Campos Ferraz - RM: 568688
+Gabriel Cavaloti - RM 571643
+
+---
+
+https://github.com/goodwe-challenge/sprints/blob/chore/deliver/prompt-and-artificial-intelligence/first-sprint/README.md
+
+---
+
+Fluxograma: https://github.com/goodwe-challenge/sprints/blob/chore/deliver/prompt-and-artificial-intelligence/first-sprint/fluxograma.png
+
+---
+
+Modelo de teste no README.
