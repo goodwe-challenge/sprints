@@ -55,7 +55,9 @@ O chatbot atuará como um assistente multifuncional capaz de:
 
 Abaixo está a representação da arquitetura lógica do roteamento e resposta do nosso chatbot:
 
-```text
+![fluxograma](./fluxograma.png)
+
+<!-- ```text
 ┌─────────────────────────────────────────────────────────┐
 │                    USUÁRIO ENVIA MENSAGEM               │
 └─────────────────────────┬───────────────────────────────┘
@@ -124,7 +126,7 @@ Abaixo está a representação da arquitetura lógica do roteamento e resposta d
               │  (WhatsApp / Web)     │
               └───────────────────────┘
 
-```
+``` -->
 
 *(Se o bot não atingir confiança na resposta ou o usuário solicitar, a conversa será transferida para atendimento humano).*
 
