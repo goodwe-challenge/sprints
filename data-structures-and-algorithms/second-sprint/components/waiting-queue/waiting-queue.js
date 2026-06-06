@@ -1,4 +1,4 @@
-let _lastQueueSnapshot = "";
+let _lastQueueSnapshot = null;
 
 function renderWaitingQueue() {
   const list = document.getElementById("waiting-queue-list");

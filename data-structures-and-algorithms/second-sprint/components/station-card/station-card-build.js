@@ -39,8 +39,11 @@ function buildStationCard(stationId) {
           <span class="station-stat-value">${session.initialPct}% → <span id="sc-${stationId}-pct">${pct}</span>%</span>
         </div>
         <div class="station-stat-row">
-          <span class="station-stat-label" id="sc-${stationId}-pow-label">Potência${throttled ? " ⚡" : ""}</span>
-          <span class="station-stat-value" id="sc-${stationId}-pow-val">${session.power.toFixed(1)} kW${throttled ? " / " + session.powerMax + " kW" : ""}</span>
+          <span class="station-stat-label">Potência</span>
+          <span class="station-stat-value">
+            <span class="power-arrow ${throttled ? "down" : "up"}" id="sc-${stationId}-pow-arrow">${throttled ? "↓" : "↑"}</span>
+            <span id="sc-${stationId}-pow-txt">${session.power.toFixed(1)} kW${throttled ? " / " + session.powerMax + " kW" : ""}</span>
+          </span>
         </div>
         <div class="station-stat-row">
           <span class="station-stat-label">Tempo</span>
@@ -73,11 +76,14 @@ function updateStationCard(stationId, session) {
   const pctEl = document.getElementById("sc-" + stationId + "-pct");
   if (pctEl) pctEl.textContent = pct;
 
-  const powLabel = document.getElementById("sc-" + stationId + "-pow-label");
-  if (powLabel) powLabel.textContent = "Potência" + (throttled ? " ⚡" : "");
+  const powArrow = document.getElementById("sc-" + stationId + "-pow-arrow");
+  if (powArrow) {
+    powArrow.textContent = throttled ? "↓" : "↑";
+    powArrow.className = "power-arrow " + (throttled ? "down" : "up");
+  }
 
-  const powVal = document.getElementById("sc-" + stationId + "-pow-val");
-  if (powVal) powVal.textContent = session.power.toFixed(1) + " kW" + (throttled ? " / " + session.powerMax + " kW" : "");
+  const powTxt = document.getElementById("sc-" + stationId + "-pow-txt");
+  if (powTxt) powTxt.textContent = session.power.toFixed(1) + " kW" + (throttled ? " / " + session.powerMax + " kW" : "");
 
   const timeEl = document.getElementById("sc-" + stationId + "-time");
   if (timeEl) timeEl.textContent = formatDuration(session.elapsedMinutes);

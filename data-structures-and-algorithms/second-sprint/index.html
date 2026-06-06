@@ -34,7 +34,7 @@
     .app-shell {
       display: flex;
       flex-direction: row;
-      min-height: 100vh;
+      height: 100%;
     }
 
     .main-content {
@@ -229,7 +229,9 @@
                   <span class="ocpp-log-title">Mensagens OCPP 1.6</span>
                   <span class="ocpp-log-count" id="ocpp-log-count">0 msgs</span>
                 </div>
-                <div class="ocpp-log-list" id="ocpp-log-list"></div>
+                <div class="ocpp-log-list" id="ocpp-log-list">
+                  <div class="ocpp-log-empty" id="ocpp-log-empty">Inicie um carregamento para gerar logs.</div>
+                </div>
               </div>
             </div>
             <div>
@@ -315,6 +317,8 @@
                 <div class="expl-fields" style="padding-top:var(--space-3)">
                   <div class="expl-field"><span class="expl-field-key">Estrutura DSA</span><span class="expl-field-val">Queue (FIFO) para fila de espera</span></div>
                   <div class="expl-field"><span class="expl-field-key">Algoritmo</span><span class="expl-field-val">Distribuição proporcional</span></div>
+                  <div class="expl-field"><span class="expl-field-key" style="color:var(--color-accent)">↑ Potência nominal</span><span class="expl-field-val">Sem redução — demanda dentro do limite</span></div>
+                  <div class="expl-field"><span class="expl-field-key" style="color:var(--color-warning)">↓ Potência reduzida</span><span class="expl-field-val">Throttling ativo — limite de 50 kW excedido</span></div>
                 </div>
               </div>
             </div>

@@ -22,6 +22,9 @@ function renderOcppLog() {
   const total = ocppBus.messageLog.length;
   if (total === _ocppRenderedCount) return;
 
+  const empty = document.getElementById("ocpp-log-empty");
+  if (empty) empty.remove();
+
   const numNew = Math.min(total - _ocppRenderedCount, 20);
   for (let i = numNew - 1; i >= 0; i--) {
     list.insertBefore(buildLogEntry(ocppBus.messageLog[i]), list.firstChild);
