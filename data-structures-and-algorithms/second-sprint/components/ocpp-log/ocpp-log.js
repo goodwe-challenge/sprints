@@ -19,7 +19,7 @@ function renderOcppLog() {
   const list = document.getElementById("ocpp-log-list");
   if (!list) return;
 
-  const total = ocppBus.messageLog.length;
+  const total = ocppBus._totalSent;
   if (total === _ocppRenderedCount) return;
 
   const empty = document.getElementById("ocpp-log-empty");

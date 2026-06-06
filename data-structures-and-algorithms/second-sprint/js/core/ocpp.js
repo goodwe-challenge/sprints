@@ -2,6 +2,7 @@ class OCPPMessageBus {
   constructor() {
     this.messageLog = [];
     this.queue = new Queue();
+    this._totalSent = 0;
   }
 
   send(action, payload) {
@@ -28,6 +29,7 @@ class OCPPMessageBus {
   _log(direction, action, payload) {
     this.messageLog.unshift({ ts: formatTime(new Date()), direction, action, payload });
     if (this.messageLog.length > 50) this.messageLog.pop();
+    this._totalSent++;
     if (typeof renderOcppLog === "function") renderOcppLog();
   }
 }
