@@ -1,0 +1,54 @@
+.wallet-history-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.wallet-history-title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.wallet-tx-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.wallet-tx-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-2);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+}
+
+.wallet-tx-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  flex: 1;
+}
+
+.wallet-tx-label { font-weight: 600; }
+
+.wallet-tx-date {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.wallet-tx-amount { font-weight: 700; }
+.wallet-tx-amount.debit  { color: var(--color-danger); }
+.wallet-tx-amount.credit { color: var(--color-accent); }
+
+.wallet-empty {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}

@@ -1,0 +1,92 @@
+.stations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.station-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.2s;
+}
+
+.station-card.charging { border-color: var(--color-accent); }
+.station-card.queued   { border-color: var(--color-warning); }
+
+.station-card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.station-id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-2);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.station-card.charging .station-id {
+  background: var(--color-accent-dim);
+  color: var(--color-accent);
+}
+
+.station-card-title {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.station-name   { font-size: var(--text-sm); font-weight: 600; }
+
+.station-status-badge { font-size: var(--text-xs); color: var(--color-text-muted); }
+.station-card.charging .station-status-badge { color: var(--color-accent); }
+.station-card.queued   .station-status-badge { color: var(--color-warning); }
+
+.station-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.station-stat-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+}
+
+.station-stat-label { color: var(--color-text-muted); }
+.station-stat-value { font-weight: 600; }
+
+.station-battery-bar-track {
+  background: var(--color-surface-2);
+  border-radius: var(--radius-full);
+  height: 0.375rem;
+  overflow: hidden;
+}
+
+.station-battery-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--color-accent);
+  transition: width 0.5s ease;
+}
+
+.station-card-actions {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+}
