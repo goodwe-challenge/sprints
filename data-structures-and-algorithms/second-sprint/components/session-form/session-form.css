@@ -1,0 +1,41 @@
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-backdrop.open {
+  display: flex;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-8);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  width: 28rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+}
+
+.modal-subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.modal-actions {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+}

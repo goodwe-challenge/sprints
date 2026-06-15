@@ -1,0 +1,29 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(0.5rem); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-0.5rem); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes logEntry {
+  from { opacity: 0; background: var(--color-accent-dim); }
+  to   { opacity: 1; background: transparent; }
+}
+
+.section {
+  display: none;
+  animation: fadeIn 0.2s ease;
+}
+
+.section.active {
+  display: flex;
+  flex-direction: column;
+}

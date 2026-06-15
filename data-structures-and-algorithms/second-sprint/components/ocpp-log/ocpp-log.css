@@ -1,0 +1,93 @@
+.ocpp-log-widget {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.ocpp-log-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ocpp-log-title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.ocpp-log-count {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.ocpp-log-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  max-height: 14rem;
+  overflow-y: auto;
+}
+
+.ocpp-log-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  animation: logEntry 0.3s ease;
+  border-left: 2px solid transparent;
+}
+
+.ocpp-log-entry.send {
+  border-left-color: var(--color-accent);
+}
+
+.ocpp-log-entry.recv {
+  border-left-color: var(--color-text-muted);
+}
+
+.ocpp-log-meta {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+}
+
+.ocpp-log-dir {
+  font-weight: 700;
+}
+
+.ocpp-log-entry.send .ocpp-log-dir {
+  color: var(--color-accent);
+}
+
+.ocpp-log-entry.recv .ocpp-log-dir {
+  color: var(--color-text-muted);
+}
+
+.ocpp-log-action {
+  font-weight: 600;
+}
+
+.ocpp-log-ts {
+  color: var(--color-text-muted);
+  margin-left: auto;
+}
+
+.ocpp-log-payload {
+  color: var(--color-text-muted);
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ocpp-log-empty {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
