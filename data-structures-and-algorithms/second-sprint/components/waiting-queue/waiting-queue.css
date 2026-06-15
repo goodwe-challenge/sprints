@@ -1,0 +1,73 @@
+.waiting-queue-widget {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.waiting-queue-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.waiting-queue-title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.queue-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-full);
+  background: var(--color-warning);
+  color: var(--color-bg);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  min-width: 1.5rem;
+}
+
+.waiting-queue-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.queue-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-2);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  animation: slideIn 0.2s ease;
+}
+
+.queue-position {
+  font-weight: 700;
+  color: var(--color-warning);
+  width: 1.5rem;
+  flex-shrink: 0;
+}
+
+.queue-vehicle {
+  font-weight: 600;
+  flex: 1;
+}
+
+.queue-plan {
+  color: var(--color-text-muted);
+}
+
+.waiting-queue-empty {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}

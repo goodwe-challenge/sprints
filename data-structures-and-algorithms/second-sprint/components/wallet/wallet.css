@@ -1,0 +1,39 @@
+.wallet-widget {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.wallet-balance-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-8);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.wallet-balance-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.wallet-balance-amount {
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.wallet-actions {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+}
+
+.wallet-add-form {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  align-items: center;
+}

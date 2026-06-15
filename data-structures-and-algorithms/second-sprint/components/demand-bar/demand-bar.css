@@ -1,0 +1,63 @@
+.demand-bar-widget {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.demand-bar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.demand-bar-title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.demand-bar-values {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.demand-bar-track {
+  background: var(--color-surface-2);
+  border-radius: var(--radius-full);
+  height: 0.75rem;
+  overflow: hidden;
+}
+
+.demand-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--color-accent);
+  transition: width 0.5s ease, background 0.3s;
+}
+
+.demand-bar-fill.warning {
+  background: var(--color-warning);
+}
+
+.demand-bar-fill.danger {
+  background: var(--color-danger);
+}
+
+.demand-bar-legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.demand-threshold-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
