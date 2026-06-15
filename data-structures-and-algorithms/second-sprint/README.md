@@ -83,7 +83,7 @@ Para executar o protótipo funcional e visualizar a geração de relatórios ope
 git clone [https://github.com/goodwe-challenge/sprints.git](https://github.com/goodwe-challenge/sprints.git)
 ```
 
-2. Navegue até a pasta da aplicação (Sprint 1 / Thunderbolt).
+2. Navegue até data-structures-and-algorithms/second-sprint.
 
 3. Como o projeto é baseado em frontend puro, basta abrir o arquivo index.html em qualquer navegador moderno.
 
