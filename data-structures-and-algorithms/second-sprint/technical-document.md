@@ -276,7 +276,7 @@ Ambas as estruturas usam `unshift()` para ordenação do mais recente ao mais an
 
 ## 4. Mapeamento dos Critérios de Avaliação
 
-Esta seção relaciona cada critério de avaliação da Sprint 2 à sua implementação concreta, faixa de nota esperada e arquivos fonte relevantes.
+Esta seção relaciona cada critério de avaliação da Sprint 2 à sua implementação.
 
 ---
 
